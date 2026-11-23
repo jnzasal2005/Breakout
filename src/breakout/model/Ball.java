@@ -32,8 +32,10 @@ public class Ball {
     }
 
     public void reset() {
-        x = 0;
+        x = 392;
         y = 529;
+        vx = 0;
+        vy = 0;
     }
 
     public void setVx(double vx) {

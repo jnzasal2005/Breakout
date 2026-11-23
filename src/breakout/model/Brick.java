@@ -18,7 +18,6 @@ public class Brick {
         this.y = y;
         this.width = width;
         this.height = height;
-
         this.destroyed = false;
     }
     // methods
@@ -46,5 +45,6 @@ public class Brick {
     public int getHeight() {
         return this.height;
     }
+
 
 }
