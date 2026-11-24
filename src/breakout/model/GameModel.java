@@ -42,22 +42,21 @@ public class GameModel {
         bricks = new ArrayList<>();
         // x=39 + c*91
         // 60 + r * 31
-        for (int r=0 ; r<=7 ; r++) {
+       for (int r = 0; r < 5; r++) {
 
-            for (int c=0 ; c<=4 ; c++) {
+            for (int c = 0; c < 8; c++) {
 
-                double x = 39 + c*91;
-                double y = 60 + r*31;
+                double x = 39 + c * 91;
+                double y = 60 + r * 31;
 
                 Brick brick = new Brick(x, y, 85, 25);
                 bricks.add(brick);
-
             }
         }
     }
 
-    public void addScore () {
-        this.score = this.score + 100;
+    public void addScore (int score) {
+        this.score = this.score + score;
     }
 
     public void loseLife () {
